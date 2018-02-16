@@ -1,0 +1,47 @@
+.contacts {
+  font-weight: 300;
+  padding-top: 35px;
+  h4 {
+    color: #2a93c9;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .container {
+    margin-bottom: 25px;
+    background-color: #fff;
+  }
+
+  .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 33px 38px 25px 38px;
+    border-bottom: 7px solid #6cc8df;
+  }
+  .col-md-4:nth-child(2) {
+    border-bottom: 7px solid #56b0d2;
+  }
+  .col-md-4:nth-child(3) {
+    border-bottom: 7px solid #2a88c9;
+  }
+  .table th,td {
+    border-color: #2a93c9;
+    border-bottom: 1px solid #2a93c9;
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(42, 147, 201,0.3);
+  }
+
+  .user-btn {
+    color: #2a93c9;
+    background-color: #ffffff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #2a93c9;
+    min-width: 160px;
+  }
+}
