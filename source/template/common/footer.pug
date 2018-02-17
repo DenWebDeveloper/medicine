@@ -1,9 +1,29 @@
 footer.footer
     .container
         .row
-            .col-md-6
-            .col-md-6
-        .row
-            .col-md-4
-            .col-md-4
-            .col-md-4
+            .col-md-4.footer__logo
+                div
+                    img(src='assets/img/logo.png', width="150px", height="150px", alt="Logo Pharm Comunnity")
+                div.footer__brand-name
+                    | <span>Pharm</span><hr><span>Community</span><br>
+                    small інтерактивні онлайн курси
+                    ul.social.list-unstyled
+                        li
+                            a.social__link(href="#") VK
+                        li
+                            a.social__link.social__link--fc(href="#") Facebook
+                        li
+                            a.social__link.social__link--youtube(href="#") YouTube
+            .col-md-8
+                ul.docs.list-unstyled
+                    li
+                        a.docs__title(href="#") Документи
+                    li
+                        a.docs__link(href="#") Ліцензія
+                    li
+                        a.docs__link.social__link--fc(href="#") Конфіденційність
+                    li
+                        a.docs__link.social__link--youtube(href="#") Угода
+        hr
+        .copyright Всі права захищені | 2018 | Зроблено з любовю <i class="heart"></i>
+

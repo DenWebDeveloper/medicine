@@ -1,166 +1,117 @@
 body {
-  font-family: "Roboto", "Arial", sans-serif;
+  color: #333;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-header,
-main {
-  background-color: #f7fafb;
-}
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 200;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.34);
-}
-
-a.nav-link.user-btn {
-  padding: 21px 30px;
-  padding-bottom: 19px;
-  border: 1px solid #ffffff;
-  font-weight: 700;
-  font-size: 15/16 + 0rem;
-  margin-top: 23px;
-  margin-bottom: 23px;
-
-  &:hover {
-    color: #ffffff;
-    border-color: rgb(137, 227, 255);
-    background-color: rgb(137, 227, 255);
-  }
-}
-
-.navbar {
-  max-width: 1200px;
-  margin: 0 auto;
-
-  .navbar-nav {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .navbar-brand {
-    font-size: 31px;
-  }
-
-  .nav-link {
-    color: #fff;
-    font-size:  1.225rem;;
-    line-height: 1.1;
-    font-weight: bold;
-    font-style: italic;
+  background: transparent url("../img/1.jpg") center center no-repeat;
+  position: relative;
+  &:before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
   }
 
   .nav-item {
-    text-align: center;
     margin-right: 15px;
-    transition: border 0.1s linear;
-    border-bottom: 0px solid #319d57;
+  }
 
-    &:hover {
-      transition: border 0.1s ease-in-out;
-      border-bottom: 2px solid #319d57;
+  .nav-link {
+    margin-top: 20px;
+    padding-left: 30px !important;
+    font-size: 1.1rem;
+    color:#fff;
+    position: relative;
+
+    &:before {
+      content: "";
+      bottom: 12px;
+      left: 5px;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: transparent center center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .nav-link--materials:before {
+    background-image: url(../img/books-stack.svg);
+  }
+
+  .nav-link--course:before {
+    background-image: url(../img/online-course.svg);
+  }
+
+  .nav-link--registration:before {
+    background-image: url(../img/add-user-symbol.svg);
+  }
+
+  .nav-link--login:before {
+    background-image: url(../img/web-log-in.svg);
+  }
+
+  .header__content {
+    padding-top: 110px;
+    padding-bottom: 125px;
+
+    .btn.btn-success {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      padding: 0.475rem 2.15rem;
+    }
+  }
+
+  .header__logo > div {
+    padding-right: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .header__brand-name {
+    font-size: 2rem;
+    line-height: 1;
+    padding-top: 20px;
+    text-transform: uppercase;
+    color: #319d57;
+    font-weight: bold;
+    hr {
+      margin-top: 0;
+      margin-bottom: 0;
+      border-color: #319d57;
+      border-width: 2px;
       position: relative;
+
       &:before {
         content: "";
         position: absolute;
-        background-color: #3f5972;
-        height: 2px;
-        width: 70%;
+        top: -2px;
         left: 0;
-        bottom: -2px;
+        height: 2px;
+        width: 111px;
+        background-color: #3f5972;
       }
     }
-  }
+    span:first-child {
+      color: #3f5972;
+    }
 
-  .nav-item.active{
-    border-bottom: 2px solid #319d57;
-    position: relative;
-    &:before {
-      content: "";
-      position: absolute;
-      background-color: #3f5972;
-      height: 2px;
-      width: 70%;
-      left: 0;
-      bottom: -2px;
+    small {
+      color: #fff;
+      font-size: 1rem;
+      text-transform: lowercase;
     }
   }
-}
 
-#header-carousel .carousel-caption {
-  bottom: 20%;
-}
-
-.header-scroll {
-  background-image: url(https://ld-wp.template-help.com/wordpress_bemedical/v3/beclinic/wp-content/themes/beclinic/assets/images/header_bg.jpg);
-
-  a.nav-link.user-btn {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .navbar .nav-item {
-    transition: all 0.5s linear;
-    padding: 21px 0;
-  }
-}
-
-.navbar-brand {
-  display: flex;
-  justify-content: flex-start;
-}
-.navbar-brand img {
-  width: 100px;
-  height: 100px;
-
-  &:hover {
-    animation-duration: 3s;
-    animation-name: rotate;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-
-  }
-}
-
-.name-company {
-  line-height: 1;
-  padding-top: 20px;
-  text-transform: uppercase;
-  color: #319d57;
-  font-weight: bold;
-  hr {
-    margin-top: 0;
-    margin-bottom: 0;
-    border-color: #319d57;
-    border-width: 2px;
-    position: relative;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: -2px;
-      left: 0;
-      height: 2px;
-      width: 111px;
-      background-color: #3f5972;
-    }
-  }
-  span:first-child {
-    color: #3f5972;
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
+  .header__message {
+    max-width: 400px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
   }
 }
