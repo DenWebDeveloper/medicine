@@ -1,0 +1,51 @@
+#modal-login.modal.fade(tabindex='-1', role='dialog', aria-labelledby='modal-login', aria-hidden='true')
+    .modal-dialog(role='document')
+        .modal-content
+            .modal-header
+                h5.modal-title Увійти
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+            .modal-body
+                form
+                    .form-group
+                        input.form-control(type='email', aria-describedby='emailHelp', placeholder='Почта')
+                        small.form-text.text-muted We'll never share your email with anyone else.
+                    .form-group
+                        input.form-control(type='password', placeholder='Пароль')
+                    .form-check
+                        input#check1.form-check-input(type='checkbox')
+                        label.form-check-label(for='check1') Я працюю у сфері медецині
+                    .form-check
+                        input#check2.form-check-input(type='checkbox')
+                        label.form-check-label(for='check2') Я даю право на обробку даниних
+                    .form-check
+                        input#check3.form-check-input(type='checkbox')
+                        label.form-check-label(for='check3')
+                            a(href="#") Я прочитав ліцензійну угоду
+                    button.btn.btn-primary.mt-3(type='submit') Відправити
+
+            .modal-footer
+                button.btn.btn-secondary(type='button', data-dismiss='modal') Закрити
+
+#modal-registration.modal.fade(tabindex='-1', role='dialog', aria-labelledby='modal-login', aria-hidden='true')
+    .modal-dialog(role='document')
+        .modal-content
+            .modal-header
+                h5.modal-title Реєстрація
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+            .modal-body
+                #example-basic
+                    h3 Keyboard
+                    section
+                        p Try the keyboard navigation by clicking arrow left or right!
+                    h3 Effects
+                    section
+                        p Wonderful transition effects.
+                    h3 Pager
+                    section
+                        p The next and previous buttons help you to navigate through your content.
+
+            .modal-footer
+                button.btn.btn-secondary(type='button', data-dismiss='modal') Закрити
+

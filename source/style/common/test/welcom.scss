@@ -1,0 +1,41 @@
+.welcom {
+  margin-top: 50px;
+  background-image: url(http://ld-wp.template-help.com/wordpress_bemedical/v3/beclinic/wp-content/uploads/2017/10/fullwidth-img-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
+  padding: 74px 0px 89px 0px;
+  color: #ffffff;
+
+  h2 {
+    font-size: 38/16 + 0rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  .welcom-intro {
+    line-height: 30px;
+    font-size: 24/16 + 0rem;
+  }
+
+  p {
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .btn-user {
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    padding: 18px 22px 20px;
+    border-radius: 3px;
+    font-weight: 700;
+    color: #2a93c9;
+    background-color: #ffffff;
+    border: none;
+  }
+}

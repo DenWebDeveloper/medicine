@@ -19,19 +19,19 @@
               <li class="nav-item"><a class="nav-link nav-link--materials" href="#">Матеріали</a></li>
             </ul>
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link nav-link--registration" href="#">Реєстрація</a></li>
-              <li class="nav-item"><a class="nav-link nav-link--login" href="#">Увійти</a></li>
+              <li class="nav-item"><a class="nav-link nav-link--registration" href="#" data-toggle="modal" data-target="#modal-registration">Реєстрація</a></li>
+              <li class="nav-item"><a class="nav-link nav-link--login" href="#" data-toggle="modal" data-target="#modal-login">Увійти</a></li>
             </ul>
           </div>
         </nav>
         <div class="header__content row">
-          <div class="col-md-6 header__logo">
+          <div class="col-md-6 header__logo wow zoomInDown" data-wow-delay="0.2s">
             <div><img src="assets/img/logo.png" width="200px" height="200px" alt="Logo Pharm Comunnity">
               <div class="header__brand-name"><span>Pharm</span><hr><span>Community</span><br><small>інтерактивні онлайн курси</small></div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="header__message">Найкращі ліки не допоможуть хворому, якщо не знати, як їх використовувати  тому  вітаємо вас на нашому сайті. Дізнаєтесь про все.</div><a class="btn btn-success" href="#">Почати вчитися</a>
+          <div class="col-md-6 wow zoomInDown" data-wow-delay="0.2s">
+            <div class="header__message">Найкращі ліки не допоможуть хворому, якщо не знати, як їх використовувати тому  вітаємо вас на нашому сайті. Дізнаєтесь про все.</div><a class="btn btn-success" href="#">Почати вчитися</a>
           </div>
         </div>
       </div>
@@ -41,29 +41,29 @@
         <div class="container">
           <ul class="list-unstyled section-items">
             <li class="section-items__item">
-              <div class="section-items__text">
-                <h2 class="section-items__title">Компанія виробник/Маркетингова компанія</h2>
-                <p class="section-items__paragraph">Натиснувши кнопку «Обов’язкові курси + Тести» Ви одразу переходите на сторінку із логотипами виробників, кольорові – ті, по яких уже доступні навчальні матеріали, чорно-білі – поки що не активні.</p>
+              <div class="section-items__text wow bounceInRight" data-wow-delay="0.2s">
+                <h2 class="section-items__title">Компанії виробнику/Маркетинговій компанії</h2>
+                <p class="section-items__paragraph">Світ не стоїть на місці, Digital-технології пронизують усі сфери життя. Ви справді хочете залишитись на самоті із застарілими методами промоції? Ми пропонуємо революційний підхід! Ви з нами?</p>
               </div>
-              <div class="section-items__img"><img src="assets/img/company.svg"></div>
+              <div class="section-items__img wow bounceInLeft" data-wow-delay="1s"><img src="assets/img/company.svg"></div>
             </li>
             <li class="section-items__item">
-              <div class="section-items__text">
-                <h2 class="section-items__title">Аптечна мережа</h2>
-                <p class="section-items__paragraph">Натиснувши кнопку «Обов’язкові курси + Тести» Ви одразу переходите на сторінку із логотипами виробників, кольорові – ті, по яких уже доступні навчальні матеріали, чорно-білі – поки що не активні.</p>
+              <div class="section-items__text wow bounceInRight" data-wow-delay="0.2s">
+                <h2 class="section-items__title">Аптечній мережі</h2>
+                <p class="section-items__paragraph"> Спочатку приходять не клієнти, першими приходять співробітники! Ви і далі готові витрачати найпродуктивніші години роботи найкращих співробітників на балачки, які не приносять знань? Чи приєднаєтесь до нас?</p>
               </div>
-              <div class="section-items__img"><img src="assets/img/pharmacy.svg"></div>
+              <div class="section-items__img wow bounceInLeft" data-wow-delay="1s"><img src="assets/img/pharmacy.svg"></div>
             </li>
             <li class="section-items__item">
-              <div class="section-items__text">
-                <h2 class="section-items__title">Персоналізацією користувачів під кожного окремого клієнта</h2>
-                <p class="section-items__paragraph">Натиснувши кнопку «Обов’язкові курси + Тести» Ви одразу переходите на сторінку із логотипами виробників, кольорові – ті, по яких уже доступні навчальні матеріали, чорно-білі – поки що не активні.</p>
+              <div class="section-items__text wow bounceInRight" data-wow-delay="0.2s">
+                <h2 class="section-items__title">Фармацевту/Провізору</h2>
+                <p class="section-items__paragraph">Представники різні, інформація та ж сама, корисної нуль! Здобудь справді актуальні знання у зручний для себе час! Давай із нами!</p>
               </div>
-              <div class="section-items__img"><img src="assets/img/doctor.svg"></div>
+              <div class="section-items__img wow bounceInLeft" data-wow-delay="0.2s"><img src="assets/img/doctor.svg"></div>
             </li>
           </ul>
         </div>
-        <div class="banner">Xочу спробувати!!!<a class="btn btn-light" href="#">Увійти</a></div>
+        <div class="banner">Xочу спробувати!!!<a class="btn btn-light wow fadeInRightBig" href="#" id="js-button-registration1" data-wow-delay="0.2s"> Зареєструватися</a></div>
       </section>
       <section class="about">
         <div class="container">
@@ -71,40 +71,39 @@
           <hr>
           <p class="section__preview">Компанія Pharm Community (PharmCom), на базі технології «Digital Learning», пропонує новий формат навчання працівників аптечної сфери, що відрізняється від інших</p>
           <div class="row">
-            <div class="col-md-3"><a href="#"><img src="assets/img/hourglass.svg" alt="hourglass">
+            <div class="col-md-3 wow bounceInUp" data-wow-delay="0.2s"><a href="#"><img src="assets/img/hourglass.svg" alt="hourglass">
                 <h5>Зберегти час</h5>
                 <p>Життя коротке і ми це знаєм</p></a></div>
-            <div class="col-md-3"><a href="#"><img src="assets/img/open-book.svg">
+            <div class="col-md-3 wow bounceInUp" data-wow-delay="0.2s"><a href="#"><img src="assets/img/open-book.svg">
                 <h5>Нові методи та принципи навчання</h5>
                 <p>Навчання ще ніколи не було таким цікавим і креативним</p></a></div>
-            <div class="col-md-3"><a href="#"><img src="assets/img/coding.svg">
+            <div class="col-md-3 wow bounceInUp" data-wow-delay="0.2s"><a href="#"><img src="assets/img/coding.svg">
                 <h5>Зручний та простий інтирфейс</h5>
                 <p>Ви знайдете все що потрібно і нічого зайвого</p></a></div>
-            <div class="col-md-3"><a href="#"><img src="assets/img/list.svg">
+            <div class="col-md-3 wow bounceInUp" data-wow-delay="0.2s"><a href="#"><img src="assets/img/list.svg">
                 <h5>Практичні завдання і не тільки</h5>
                 <p>Після кожного навчального курсу вас чекають практичні завдання і .....:)</p></a></div>
-            <div class="col-md-3"><a class="link" href="#"><img src="assets/img/smartphones.svg">
+            <div class="col-md-3 wow bounceInUp" data-wow-delay="0.2s"><a class="link" href="#"><img src="assets/img/smartphones.svg">
                 <h5>Адаптивність</h5>
                 <p>Вчіться завжди навіть коли ви не в дома</p></a></div>
-            <div class="col-md-3"><a href="#"><img src="assets/img/recommended.svg">
+            <div class="col-md-3 wow bounceInUp" data-wow-delay="0.2s"><a href="#"><img src="assets/img/recommended.svg">
                 <h5>Якісні матеріали</h5>
                 <p>Ми гарантуємо актуальність і якість інформації</p></a></div>
-            <div class="col-md-3"><a href="#"><img src="assets/img/trendy.svg">
+            <div class="col-md-3 wow bounceInUp" data-wow-delay="0.2s"><a href="#"><img src="assets/img/trendy.svg">
                 <h5>Завжди в тренді</h5>
                 <p>Наш сайт завжди буде відповідати сучасним стандартам</p></a></div>
-            <div class="col-md-3"><a href="#"><img src="assets/img/customer-service.svg">
+            <div class="col-md-3 wow bounceInUp" data-wow-delay="0.2s"><a href="#"><img src="assets/img/customer-service.svg">
                 <h5>Підтримка 24/7</h5>
                 <p>Ми завжди вам допоможемо. Задавайте свої питання.</p></a></div>
           </div>
         </div>
-        <div class="banner">Залиш конкурентів по заду!!!<a class="btn btn-light" href="#">Вирватись вперед</a></div>
+        <div class="banner">Залиш конкурентів по заду!!!<a class="btn btn-light wow fadeInRightBig" href="#" id="js-button-registration2" data-wow-delay="0.2s">Вирватись вперед</a></div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 footer__logo">
-            <div><img src="assets/img/logo.png" width="150px" height="150px" alt="Logo Pharm Comunnity"></div>
+          <div class="col-md-4 footer__logo"><a href="#"><img src="assets/img/logo.png" width="150px" height="150px" alt="Logo Pharm Comunnity"></a>
             <div class="footer__brand-name"><span>Pharm</span><hr><span>Community</span><br><small>інтерактивні онлайн курси</small>
               <ul class="social list-unstyled">
                 <li><a class="social__link" href="#">VK</a></li>
@@ -126,8 +125,73 @@
         <div class="copyright">Всі права захищені | 2018 | Зроблено з любовю <i class="heart"></i></div>
       </div>
     </footer>
+    <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Увійти</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input class="form-control" type="email" aria-describedby="emailHelp" placeholder="Почта"><small class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="password" placeholder="Пароль">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="check1" type="checkbox">
+                <label class="form-check-label" for="check1">Я працюю у сфері медецині</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="check2" type="checkbox">
+                <label class="form-check-label" for="check2">Я даю право на обробку даниних</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="check3" type="checkbox">
+                <label class="form-check-label" for="check3"><a href="#">Я прочитав ліцензійну угоду</a></label>
+              </div>
+              <button class="btn btn-primary mt-3" type="submit">Відправити</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Закрити</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-registration" tabindex="-1" role="dialog" aria-labelledby="modal-login" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Реєстрація</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <div id="example-basic">
+              <h3>Keyboard</h3>
+              <section>
+                <p>Try the keyboard navigation by clicking arrow left or right!</p>
+              </section>
+              <h3>Effects</h3>
+              <section>
+                <p>Wonderful transition effects.</p>
+              </section>
+              <h3>Pager</h3>
+              <section>
+                <p>The next and previous buttons help you to navigate through your content.</p>
+              </section>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Закрити</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="assets/js/app.js"></script>

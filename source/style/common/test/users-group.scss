@@ -1,0 +1,38 @@
+.user-group {
+  padding-top: 35px;
+  text-align: center;
+
+  .main-card {
+    transform: scale(1.08);
+  }
+
+  h2 {
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 120px;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: #56b0d2;
+    }
+  }
+
+  .btn {
+    color: #333333;
+    background-color: #fdfdfd;
+    border-color: #fdfdfd;
+    font-weight: bold;
+  }
+
+  .card-footer {
+  background-color: #5d83a9;
+  }
+
+}

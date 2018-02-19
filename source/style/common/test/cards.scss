@@ -1,0 +1,42 @@
+.cards {
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 60px;
+
+  h2 {
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100px;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: #56b0d2;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom:20px;
+    display: block;
+    padding: 27px 20px 30px 20px;
+
+
+    &:hover {
+      box-shadow: 5px 5px 50px 0px rgba(6,30,52,0.11);
+      transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 15/16 + 0rem;
+  }
+}
