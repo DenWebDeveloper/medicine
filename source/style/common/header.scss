@@ -4,8 +4,10 @@ body {
 
 header {
   width: 100%;
-  background: transparent url("../img/1.jpg") center center no-repeat;
+  background: transparent url("../img/bg-header.jpg") center center no-repeat;
   position: relative;
+  -webkit-background-size: cover;
+  background-size: cover;
   &:before {
     content: "";
     top: 0;
