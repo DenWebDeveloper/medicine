@@ -35,3 +35,27 @@ header {
     }
   }
 }
+
+#items-pharmacy {
+  margin-bottom: 0 !important;
+
+  .modal-content {
+    background-color: #f6f2f2;
+  }
+
+  .modal-dialog {
+    max-width: 90%;
+  }
+
+  .card {
+    min-width: 300px;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-color: #ccc;
+  }
+
+  .card-body {
+    margin-top: 5px;
+    border-top: 0.5px solid #ccc;
+  }
+}
