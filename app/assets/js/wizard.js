@@ -1,9 +1,18 @@
-var form = $("#example-advanced-form").show();
+var form = $("#form-wizard").show();
 
 form.steps({
     headerTag: "h3",
     bodyTag: "fieldset",
     transitionEffect: "slideLeft",
+    labels: {
+        cancel: "Cancel",
+        current: "",
+        pagination: "Pagination",
+        finish: "Готово",
+        next: "Наступний крок",
+        previous: "Повернутись назад",
+        loading: "Loading ..."
+    },
     onStepChanging: function (event, currentIndex, newIndex)
     {
         // Allways allow previous action even if the current form is not valid!

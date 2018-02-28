@@ -135,3 +135,15 @@
   }
 
 }
+
+#modal-registration {
+  .modal-dialog {
+    max-width: 800px;
+  }
+
+  #form-wizard {
+    .content > h3 {
+      display: none;
+    }
+  }
+}

@@ -94,31 +94,41 @@
                 button.close(type='button', data-dismiss='modal', aria-label='Close')
                     span(aria-hidden='true') ×
             .modal-body
-                form#example-advanced-form(action='#')
-                    h3 Account
+                form#form-wizard(action='#')
+                    h3 Аккаунт
                     fieldset
-                        legend Account Information
-                        label(for='userName-2') User name *
-                        input#userName-2.required(name='userName', type='text')
-                        label(for='password-2') Password *
-                        input#password-2.required(name='password', type='text')
-                        label(for='confirm-2') Confirm Password *
-                        input#confirm-2.required(name='confirm', type='text')
-                        p (*) Mandatory
-                    h3 Profile
+                        h3 Аккаунт
+                        .form-group
+                            label(for='email-2') Почта
+                            input#email-2.form-control.required.email(name='email', type='text')
+                        .form-group
+                            label(for='password-2') Пароль
+                            input#password-2.form-control.required(name='password', type='password')
+                        .form-group
+                            label(for='confirm-2') Повторіть пароль
+                            input#confirm-2.form-control.required(name='confirm', type='password')
+                    h3 Профіль
                     fieldset
-                        legend Profile Information
-                        label(for='name-2') First name *
-                        input#name-2.required(name='name', type='text')
-                        label(for='surname-2') Last name *
-                        input#surname-2.required(name='surname', type='text')
-                        label(for='email-2') Email *
-                        input#email-2.required.email(name='email', type='text')
-                        label(for='address-2') Address
-                        input#address-2(name='address', type='text')
-                        label(for='age-2') Age (The warning step will show up if age is less than 18) *
-                        input#age-2.required.number(name='age', type='text')
-                        p (*) Mandatory
+                        h3 Особиста інформація
+                        .form-group
+                            label(for='userName-1') Ім'я
+                            input#userName-1.form-control.required(name='firstName', type='text')
+                        .form-group
+                            label(for='userName-2') По батькові
+                            input#userName-2.form-control.required(name='secondName', type='text')
+                        .form-group
+                            label(for='userName-3') Фамілія
+                            input#userName-3.form-control.required(name='lastName', type='text')
+                        .form-group
+                            label Виберіть пол
+                            div.d-flex
+                                .custom-radio
+                                    input#customControlInline.custom-control-input(type='radio', name="customRadio")
+                                    label.checkbox-label-icon(for='customControlInline')
+                                .custom-checkbox
+                                    input#customControlInline1.custom-control-input(type='radio', name="customRadio")
+                                    label.checkbox-label-icon.checkbox-label-icon-woman(for='customControlInline1')
+
                     h3 Warning
                     fieldset
                         legend You are to young

@@ -251,32 +251,51 @@
             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
           </div>
           <div class="modal-body">
-            <form id="example-advanced-form" action="#">
-              <h3>Account</h3>
+            <form id="form-wizard" action="#">
+              <h3>Аккаунт</h3>
               <fieldset>
-                <legend>Account Information</legend>
-                <label for="userName-2">User name *</label>
-                <input class="required" id="userName-2" name="userName" type="text">
-                <label for="password-2">Password *</label>
-                <input class="required" id="password-2" name="password" type="text">
-                <label for="confirm-2">Confirm Password *</label>
-                <input class="required" id="confirm-2" name="confirm" type="text">
-                <p>(*) Mandatory</p>
+                <h3>Аккаунт</h3>
+                <div class="form-group">
+                  <label for="email-2">Почта</label>
+                  <input class="form-control required email" id="email-2" name="email" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="password-2">Пароль</label>
+                  <input class="form-control required" id="password-2" name="password" type="password">
+                </div>
+                <div class="form-group">
+                  <label for="confirm-2">Повторіть пароль</label>
+                  <input class="form-control required" id="confirm-2" name="confirm" type="password">
+                </div>
               </fieldset>
-              <h3>Profile</h3>
+              <h3>Профіль</h3>
               <fieldset>
-                <legend>Profile Information</legend>
-                <label for="name-2">First name *</label>
-                <input class="required" id="name-2" name="name" type="text">
-                <label for="surname-2">Last name *</label>
-                <input class="required" id="surname-2" name="surname" type="text">
-                <label for="email-2">Email *</label>
-                <input class="required email" id="email-2" name="email" type="text">
-                <label for="address-2">Address</label>
-                <input id="address-2" name="address" type="text">
-                <label for="age-2">Age (The warning step will show up if age is less than 18) *</label>
-                <input class="required number" id="age-2" name="age" type="text">
-                <p>(*) Mandatory</p>
+                <h3>Особиста інформація</h3>
+                <div class="form-group">
+                  <label for="userName-1">Ім'я</label>
+                  <input class="form-control required" id="userName-1" name="firstName" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="userName-2">По батькові</label>
+                  <input class="form-control required" id="userName-2" name="secondName" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="userName-3">Фамілія</label>
+                  <input class="form-control required" id="userName-3" name="lastName" type="text">
+                </div>
+                <div class="form-group">
+                  <label>Виберіть пол</label>
+                  <div class="d-flex">
+                    <div class="custom-radio">
+                      <input class="custom-control-input" id="customControlInline" type="radio" name="customRadio">
+                      <label class="checkbox-label-icon" for="customControlInline"></label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input class="custom-control-input" id="customControlInline1" type="radio" name="customRadio">
+                      <label class="checkbox-label-icon checkbox-label-icon-woman" for="customControlInline1"></label>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <h3>Warning</h3>
               <fieldset>
