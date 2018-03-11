@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     list-style: none;
 
@@ -12,11 +12,11 @@
       text-decoration: none;
       outline: none;
       display: inline-block;
-      width: 140px;
+      padding: 0 20px;
       height: 45px;
       line-height: 45px;
       border-radius: 45px;
-      margin: 10px 20px;
+      margin: 10px 10px;
       font-family: 'Montserrat', sans-serif;
       font-size: 11px;
       text-transform: uppercase;
@@ -36,12 +36,25 @@
     }
   }
 
+  input {
+    text-align: center;
+  }
+
   input.error {
     border: 1px solid #c71313;
   }
 
   label {
     font-weight: bold;
+  }
+
+  fieldset {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 14px 0px rgba(23, 24, 23, 0.4);
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 30px;
   }
 
   fieldset > h3 {
@@ -66,7 +79,6 @@
   }
 
   ul[role="menu"] {
-    justify-content: flex-start;
     a {
       margin-right: 30px;
       width: auto;
@@ -81,5 +93,43 @@
         transform: translateY(-7px);
       }
     }
+  }
+
+  .days-radio {
+    display: block;
+    padding: 12px;
+    color: #fff;
+    margin-right: 20px;
+    background-color: #DAECE9;
+    border-radius: 50%;
+  }
+
+  .custom-control-checkbox {
+    display: none;
+  }
+
+  .custom-control-checkbox:checked + .days-radio{
+    box-shadow:0 15px 20px rgba(46, 229, 157, 0.4);
+    transform: translateY(-7px);
+    background-color: #2EE59D;
+  }
+
+  .schedule-row {
+    padding: 0 12%;
+    margin-bottom: 15px;
+  }
+
+  #add-schedule-row,
+  .btn-remove {
+    width: 30px;
+    height: 30px;
+    background: #007bff url(../img/add.svg) center center no-repeat;
+    -webkit-background-size: 22px;
+    background-size: 22px;
+  }
+  
+  .btn-remove {
+    background-image: url(../img/delete.svg);
+    background-color: #ffc107;
   }
 }

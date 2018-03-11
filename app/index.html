@@ -285,28 +285,147 @@
                 </div>
                 <div class="form-group">
                   <label>Виберіть пол</label>
-                  <div class="d-flex">
+                  <div class="d-flex justify-content-center">
                     <div class="custom-radio">
-                      <input class="custom-control-input" id="customControlInline" type="radio" name="customRadio">
-                      <label class="checkbox-label-icon" for="customControlInline"></label>
+                      <input class="custom-control-input required" id="sex-female" type="radio" name="sexRadio" value="female">
+                      <label class="checkbox-label-icon" for="sex-female"></label>
                     </div>
-                    <div class="custom-checkbox">
-                      <input class="custom-control-input" id="customControlInline1" type="radio" name="customRadio">
-                      <label class="checkbox-label-icon checkbox-label-icon-woman" for="customControlInline1"></label>
+                    <div class="custom-radio">
+                      <input class="custom-control-input required" id="sex-male" type="radio" name="sexRadio" value="male">
+                      <label class="checkbox-label-icon checkbox-label-icon-woman" for="sex-male"></label>
                     </div>
                   </div>
                 </div>
               </fieldset>
-              <h3>Warning</h3>
+              <h3>Місце роботи</h3>
               <fieldset>
-                <legend>You are to young</legend>
-                <p>Please go away ;-)</p>
+                <h3>Місце роботи</h3>
+                <div class="form-group">
+                  <label for="region">Область</label>
+                  <select class="form-control required" id="region">
+                    <option disabled selected>Виберіть область</option>
+                    <option value="kiev-region">Київська область</option>
+                    <option value="vinnytsia-region">Вінницька область</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="city">Місто</label>
+                  <select class="form-control required" id="city">
+                    <option disabled selected>Виберіть область</option>
+                    <option value="kiev">Київська область</option>
+                    <option value="vinnytsia">Вінницька область</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="name-pharmacy">Назва аптеки</label>
+                  <select class="form-control required" id="name-pharmacy">
+                    <option disabled selected>Виберіть аптеку</option>
+                    <option value="kiev">Київська область</option>
+                    <option value="vinnytsia">Вінницька область</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="city4">Вул</label>
+                  <select class="form-control" id="city4">
+                    <option>Default select</option>
+                    <option>Default select</option>
+                  </select>
+                </div>
               </fieldset>
-              <h3>Finish</h3>
+              <h3>Графік роботи</h3>
               <fieldset>
-                <legend>Terms and Conditions</legend>
-                <input class="required" id="acceptTerms-2" name="acceptTerms" type="checkbox">
-                <label for="acceptTerms-2">I agree with the Terms and Conditions.</label>
+                <h3>Графік роботи</h3>
+                <label>Виберіть зручні дні і години для проходження тестів</label>
+                <div id="schedule">
+                  <div class="schedule-row form-inline m-b-1 d-flex justify-content-between">
+                    <div class="form-group">
+                      <select class="form-control required" name="schedule[0][day]">
+                        <option selected disabled>Виберіть день</option>
+                        <option value="1">Понедельник</option>
+                        <option value="2">Вторник</option>
+                        <option value="3">Среда</option>
+                        <option value="4">Четверг</option>
+                        <option value="5">Пятница</option>
+                        <option value="6">Суббота</option>
+                        <option value="7">Воскресенье</option>
+                        <option value="8">Будние</option>
+                        <option value="9">Выходные</option>
+                        <option value="10">Любой день</option>
+                      </select>
+                    </div>
+                    <label class="m-l-1 m-r-1 m-b-0">c</label>
+                    <div class="form-group">
+                      <select class="form-control required" name="schedule[0][from]">
+                        <option selected disabled>Виберіть час</option>
+                        <option value="0">00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                      </select>
+                    </div>
+                    <label class="m-l-1 m-r-1 m-b-0">до</label>
+                    <div class="form-group">
+                      <select class="form-control required" name="schedule[0][to]">
+                        <option selected disabled>Виберіть час</option>
+                        <option value="0">00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn-sm btn-primary m-l-1" id="add-schedule-row" type="button"></button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <h3>Фініш</h3>
+              <fieldset>
+                <h3>Правила та умови</h3>
+                <div class="form-group">
+                  <input class="required" id="acceptTerms-2" name="acceptTerms" type="checkbox">
+                  <label for="acceptTerms-2">I agree with the Terms and Conditions.</label>
+                </div>
               </fieldset>
             </form>
           </div>
