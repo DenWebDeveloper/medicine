@@ -95,12 +95,16 @@
                     span(aria-hidden="true") ×
             .modal-body
                 form#form-wizard(action="#")
-                    h3 Аккаунт
+                    h3 Акаунт
                     fieldset
-                        h3 Аккаунт
+                        h3 Акаунт
                         .form-group
                             label(for="email-2") Почта
-                            input#email-2.form-control.required.email(name="email", type="text")
+                            input#email-2.form-control.email(name="email", type="text")
+                            small.form-text.text-muted Це поле не обовязкове для заповнення
+                        .form-group
+                            label(for="phone-number") Мобільний телефон
+                            input#phone-number.form-control.required.nubmber(name="phone-number", type="text")
                         .form-group
                             label(for="password-2") Пароль
                             input#password-2.form-control.required(name="password", type="password")

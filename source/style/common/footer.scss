@@ -75,9 +75,13 @@ main {
     display: block;
     width: 40px;
     height: 40px;
-    background: transparent url(../img/vk.svg) top left no-repeat;
+    background: transparent url(../img/instagram.svg) top left no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+
+    &:hover {
+      filter: blur(1px) grayscale(100%);
+    }
   }
 
   .social__link--fc {

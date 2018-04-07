@@ -112,13 +112,22 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-3 d-flex justify-content-center align-items-start">
             <ul class="docs list-unstyled">
               <li><a class="docs__title" href="#">Документи</a></li>
               <li><a class="docs__link" href="#">Ліцензія</a></li>
               <li><a class="docs__link social__link--fc" href="#">Конфіденційність</a></li>
               <li><a class="docs__link social__link--youtube" href="#">Угода</a></li>
             </ul>
+          </div>
+          <div class="col-md-5">
+            <p>Підпишіться на нашу розсилку. Ми будемо присилати цікаві матеріали та сповіщення про проходження нових тестів</p>
+            <form>
+              <div class="form-group">
+                <label for="mailingInput">Email адреса</label>
+                <input class="form-control" id="mailingInput" type="email" aria-describedby="email" placeholder="Введіть свою почту"><small class="form-text text-muted" id="emailHelp">Ми ніколи не будемо ділитися вашою електронною поштою з ким-небудь ще.</small>
+              </div>
+            </form>
           </div>
         </div>
         <hr>
@@ -252,12 +261,16 @@
           </div>
           <div class="modal-body">
             <form id="form-wizard" action="#">
-              <h3>Аккаунт</h3>
+              <h3>Акаунт</h3>
               <fieldset>
-                <h3>Аккаунт</h3>
+                <h3>Акаунт</h3>
                 <div class="form-group">
                   <label for="email-2">Почта</label>
-                  <input class="form-control required email" id="email-2" name="email" type="text">
+                  <input class="form-control email" id="email-2" name="email" type="text"><small class="form-text text-muted">Це поле не обовязкове для заповнення</small>
+                </div>
+                <div class="form-group">
+                  <label for="phone-number">Мобільний телефон</label>
+                  <input class="form-control required nubmber" id="phone-number" name="phone-number" type="text">
                 </div>
                 <div class="form-group">
                   <label for="password-2">Пароль</label>
