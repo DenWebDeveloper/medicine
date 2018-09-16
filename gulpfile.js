@@ -23,6 +23,7 @@ $.gulp.task('default', $.gulp.series(
         'pug',
         'copy:image',
         'js.process',
+        'copy.javascript',
         'sprite:svg'
     ),
     $.gulp.parallel(
