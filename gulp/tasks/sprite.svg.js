@@ -19,7 +19,7 @@ module.exports = function() {
       .pipe($.gp.replace('&gt;', '>'))
       .pipe($.gp.svgSprite({
         mode: {
-          symbol: {
+          stack: {
             sprite: "../sprite.svg"
           }
         }

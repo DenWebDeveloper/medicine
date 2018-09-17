@@ -54,7 +54,7 @@ header {
   }
 
   .navbar-toggler-icon {
-    background-image: url(../img/menu.svg);
+    background-image: url(../img/sprite.svg#menu);
   }
   .nav-item {
     margin-right: 15px;
@@ -84,19 +84,19 @@ header {
   }
 
   .nav-link--materials:before {
-    background-image: url(../img/books-stack.svg);
+    background-image: url(../img/sprite.svg#books-stack);
   }
 
   .nav-link--course:before {
-    background-image: url(../img/online-course.svg);
+    background-image: url(../img/sprite.svg#online-course);
   }
 
   .nav-link--registration:before {
-    background-image: url(../img/add-user-symbol.svg);
+    background-image: url(../img/sprite.svg#add-user-symbol);
   }
 
   .nav-link--login:before {
-    background-image: url(../img/web-log-in.svg);
+    background-image: url(../img/sprite.svg#web-log-in);
   }
 
   .header__content {

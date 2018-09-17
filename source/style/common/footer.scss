@@ -75,7 +75,7 @@ main {
     display: block;
     width: 40px;
     height: 40px;
-    background: transparent url(../img/instagram.svg) top left no-repeat;
+    background: transparent url(../img/sprite.svg#instagram) top left no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 
@@ -85,11 +85,11 @@ main {
   }
 
   .social__link--fc {
-    background-image: url(../img/facebook-logo.svg);
+    background-image: url(../img/sprite.svg#facebook-logo);
   }
 
   .social__link--youtube {
-    background-image: url(../img/youtube.svg);
+    background-image: url(../img/sprite.svg#youtube);
   }
 
   .col-md-8 {
