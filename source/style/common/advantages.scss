@@ -87,3 +87,22 @@ section {
     font-size: 30/16 + 0rem;
   }
 }
+
+.advantages-header__item {
+  border: 3px solid gray;
+  border-radius: 5%;
+}
+
+.advantages__pharmacist {
+  color: #000000;
+}
+
+.advantages__pharmacist--self-learning {
+  background-image: url("..img/self-learning.jpg");
+  background-repeat: no-repeat;
+}
+
+.advantages__pharmacist--online {
+  background-image: url("..img/pharmacist-online.jpg");
+  background-repeat: no-repeat;
+}
